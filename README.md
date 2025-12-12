@@ -1,29 +1,40 @@
-# Weather App
+# ☀️ Weather App 🌧️
 
-A modern, responsive Weather App built with **React**, **Vite**, and **Tailwind CSS**, featuring real-time weather updates for any location. It leverages **Axios** for API calls and **Framer Motion** for smooth animations.  
-
----
-
-## Features
-
-- Search for current weather by city.
-- Display temperature, humidity, wind speed, and weather conditions.
-- Animated weather icons using **Lucide React**.
-- Dynamic background and UI effects for different weather conditions.
-- Fully responsive design for mobile and desktop.
-- Smooth UI animations with **Framer Motion**.
+A modern, responsive **Weather App** built with **React**, **Vite**, and **Tailwind CSS**, featuring real-time weather updates for any location.  
+Smooth animations powered by **Framer Motion** and sleek weather icons via **Lucide React**.  
 
 ---
 
-## Tech Stack & Dependencies
+## 🌟 Badges
 
-- **Frontend Framework:** React 18  
-- **Build Tool:** Vite  
-- **Styling:** Tailwind CSS, PostCSS, Autoprefixer  
-- **Animations:** Framer Motion  
-- **Icons:** Lucide React  
-- **HTTP Requests:** Axios  
-- **Linting:** ESLint with React plugin  
+![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6.0.3-brightgreen?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.6-blue?logo=tailwind-css&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![npm](https://img.shields.io/badge/npm-10.0.0-red?logo=npm&logoColor=white)
+
+---
+
+## 🚀 Features
+
+- 🔍 Search current weather by city.  
+- 🌡️ Display temperature, humidity, and wind speed.  
+- ⛅ Show weather conditions with animated icons.  
+- 🎨 Dynamic backgrounds for different weather conditions.  
+- 📱 Fully responsive design for mobile & desktop.  
+- ✨ Smooth animations with **Framer Motion**.  
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+- **⚛️ Frontend:** React 18  
+- **⚡ Build Tool:** Vite  
+- **🎨 Styling:** Tailwind CSS, PostCSS, Autoprefixer  
+- **🎬 Animations:** Framer Motion  
+- **🌐 Icons:** Lucide React  
+- **📡 HTTP Requests:** Axios  
+- **🧹 Linting:** ESLint with React plugin  
 
 **Dev Dependencies:**  
 - @vitejs/plugin-react  
@@ -33,9 +44,9 @@ A modern, responsive Weather App built with **React**, **Vite**, and **Tailwind 
 
 ---
 
-## Installation
+## 💾 Installation
 
-1. Clone the repository:  
+1. Clone the repo:  
 ```bash
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
