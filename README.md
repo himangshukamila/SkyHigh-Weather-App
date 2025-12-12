@@ -5,7 +5,7 @@ Smooth animations powered by **Framer Motion** and sleek weather icons via **Luc
 
 ---
 
-## 🌟 Badges
+## 🌟 Technologies
 
 ![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6.0.3-brightgreen?logo=vite&logoColor=white)
