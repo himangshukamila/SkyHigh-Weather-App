@@ -67,7 +67,7 @@ const SunMoonInfo = ({ weatherData, darkMode }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3 }}
-      className="grid grid-cols-1 md:grid-cols-3 gap-4"
+      className="cursor-pointer grid grid-cols-1 md:grid-cols-3 gap-4"
     >
       <InfoBox
         icon={<Sunrise size={32} />}
@@ -97,15 +97,15 @@ const SunMoonInfo = ({ weatherData, darkMode }) => {
 const InfoBox = ({ icon, title, value, gradient, darkMode }) => (
   <motion.div
     whileHover={{ scale: 1.05, y: -5 }}
-    className={`${
+    className={`cursor-pointer ${
       darkMode ? "glass-morphism-dark" : "glass-morphism"
     } rounded-2xl p-6 transition-all duration-300 hover:shadow-xl overflow-hidden relative`}
   >
     <div
-      className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${gradient} opacity-10 rounded-full blur-2xl`}
+      className={`cursor-pointer absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${gradient} opacity-10 rounded-full blur-2xl`}
     ></div>
 
-    <div className="relative z-10">
+    <div className="cursor-pointer relative z-10">
       <div className={`${darkMode ? "text-blue-400" : "text-blue-600"} mb-3`}>
         {icon}
       </div>

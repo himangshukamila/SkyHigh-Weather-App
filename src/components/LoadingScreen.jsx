@@ -4,7 +4,7 @@ import { Cloud, CloudRain, Sun } from "lucide-react";
 const LoadingScreen = ({ darkMode }) => {
   return (
     <div
-      className={`min-h-screen flex items-center justify-center transition-all duration-500 ${
+      className={`cursor-pointer min-h-screen flex items-center justify-center transition-all duration-500 ${
         darkMode
           ? "bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900"
           : "bg-gradient-to-br from-blue-400 via-cyan-300 to-purple-400"

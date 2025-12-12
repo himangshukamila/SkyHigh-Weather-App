@@ -20,12 +20,12 @@ const ForecastCard = ({ forecast, darkMode, index }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
       whileHover={{ scale: 1.05, y: -5 }}
-      className={`${
+      className={`cursor-pointer ${
         darkMode ? "glass-morphism-dark" : "glass-morphism"
       } rounded-2xl p-4 text-center transition-all duration-300 hover:shadow-xl`}
     >
       <p
-        className={`text-sm font-semibold mb-2 ${
+        className={`cursor-pointer text-sm font-semibold mb-2 ${
           darkMode ? "text-white" : "text-gray-900"
         }`}
       >
@@ -37,27 +37,29 @@ const ForecastCard = ({ forecast, darkMode, index }) => {
         transition={{ duration: 0.6 }}
         src={getWeatherIcon(forecast.weather[0].icon)}
         alt={forecast.weather[0].description}
-        className="w-16 h-16 mx-auto mb-2"
+        className="cursor-pointer w-16 h-16 mx-auto mb-2"
       />
 
       <p
-        className={`text-xs mb-2 capitalize ${
+        className={`cursor-pointer text-xs mb-2 capitalize ${
           darkMode ? "text-gray-400" : "text-gray-600"
         }`}
       >
         {forecast.weather[0].description}
       </p>
 
-      <div className="flex justify-center items-center gap-2">
+      <div className="cursor-pointer flex justify-center items-center gap-2">
         <span
-          className={`text-lg font-bold ${
+          className={`cursor-pointer text-lg font-bold ${
             darkMode ? "text-white" : "text-gray-900"
           }`}
         >
           {Math.round(forecast.main.temp)}°
         </span>
         <span
-          className={`text-sm ${darkMode ? "text-gray-400" : "text-gray-600"}`}
+          className={`cursor-pointer text-sm ${
+            darkMode ? "text-gray-400" : "text-gray-600"
+          }`}
         >
           / {Math.round(forecast.main.temp_min)}°
         </span>

@@ -63,7 +63,7 @@ const SearchBar = ({ onSearch, darkMode }) => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
-      className="mb-8"
+      className="cursor-pointer mb-8"
     >
       {/* MOBILE VIEW ONLY: Initial Button Row 
         (Hidden on 'md' screens and up, hidden if search is open)

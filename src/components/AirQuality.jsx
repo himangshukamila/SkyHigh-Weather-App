@@ -27,7 +27,7 @@ const AirQuality = ({ data, darkMode }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3 }}
       className={`${
-        darkMode ? "glass-morphism-dark" : "glass-morphism"
+        darkMode ? " cursor-pointer glass-morphism-dark" : "glass-morphism"
       } rounded-3xl p-6 shadow-xl`}
     >
       <div className="flex items-center gap-3 mb-6">
@@ -103,23 +103,29 @@ const AirQuality = ({ data, darkMode }) => {
 const ComponentCard = ({ label, value, unit, darkMode }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
-    className={`p-3 rounded-xl ${
+    className={`cursor-pointer p-3 rounded-xl ${
       darkMode ? "bg-white/5" : "bg-white/50"
     } border ${darkMode ? "border-white/10" : "border-gray-200"}`}
   >
     <p
-      className={`text-xs ${darkMode ? "text-gray-400" : "text-gray-600"} mb-1`}
+      className={`cursor-pointer text-xs ${
+        darkMode ? "text-gray-400" : "text-gray-600"
+      } mb-1`}
     >
       {label}
     </p>
     <p
-      className={`text-lg font-bold ${
+      className={`cursor-pointer text-lg font-bold ${
         darkMode ? "text-white" : "text-gray-900"
       }`}
     >
       {value}
     </p>
-    <p className={`text-xs ${darkMode ? "text-gray-500" : "text-gray-500"}`}>
+    <p
+      className={`cursor-pointer text-xs ${
+        darkMode ? "text-gray-500" : "text-gray-500"
+      }`}
+    >
       {unit}
     </p>
   </motion.div>

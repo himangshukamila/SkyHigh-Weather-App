@@ -76,7 +76,7 @@ function App() {
 
   return (
     <div
-      className={`min-h-screen transition-all duration-500 ${
+      className={`cursor-pointer min-h-screen transition-all duration-500 ${
         darkMode
           ? "bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900"
           : "bg-gradient-to-br from-blue-400 via-cyan-300 to-purple-400"
@@ -218,9 +218,9 @@ function App() {
 const InfoCard = ({ icon, title, value, darkMode }) => (
   <motion.div
     whileHover={{ scale: 1.05, y: -5 }}
-    className={`${
-      darkMode ? "glass-morphism-dark" : "glass-morphism"
-    } rounded-2xl p-6 transition-all duration-300`}
+    className={`cursor-pointer ${
+      darkMode ? "cursor-pointer glass-morphism-dark" : "glass-morphism"
+    } cursor-pointer rounded-2xl p-6 transition-all duration-300`}
   >
     <div className={`${darkMode ? "text-blue-400" : "text-blue-600"} mb-2`}>
       {icon}

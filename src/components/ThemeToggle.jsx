@@ -7,17 +7,17 @@ const ThemeToggle = ({ darkMode, setDarkMode }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       onClick={() => setDarkMode(!darkMode)}
-      className={`relative w-20 h-10 rounded-full p-1 transition-colors duration-300 ${
+      className={` cursor-pointer relative w-20 h-10 rounded-full p-1 transition-colors duration-300 ${
         darkMode
-          ? "bg-gradient-to-r from-indigo-600 to-purple-600"
-          : "bg-gradient-to-r from-yellow-400 to-orange-400"
+          ? "cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600"
+          : "cursor-pointer bg-gradient-to-r from-yellow-400 to-orange-400"
       } shadow-lg`}
     >
       <motion.div
         layout
         transition={{ type: "spring", stiffness: 500, damping: 30 }}
-        className={`w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md ${
-          darkMode ? "translate-x-10" : "translate-x-0"
+        className={`cursor-pointer w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md ${
+          darkMode ? "cursor-pointer translate-x-10" : "translate-x-0"
         }`}
       >
         {darkMode ? (
@@ -33,13 +33,13 @@ const ThemeToggle = ({ darkMode, setDarkMode }) => {
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            className="absolute top-2 left-2 w-1 h-1 bg-white rounded-full animate-pulse"
+            className="cursor-pointer absolute top-2 left-2 w-1 h-1 bg-white rounded-full animate-pulse"
           />
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.1 }}
-            className="absolute top-4 left-4 w-1 h-1 bg-white rounded-full animate-pulse"
+            className="cursor-pointer absolute top-4 left-4 w-1 h-1 bg-white rounded-full animate-pulse"
           />
         </>
       )}
